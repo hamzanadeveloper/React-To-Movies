@@ -66,9 +66,8 @@ const App = () => {
             <div className="m-container">
                 <header className="App-header">
                     <div className="header-title">REACT-MOVIES</div>
+                    <Search search={search} />
                 </header>
-
-                <Search search={search} />
 
                 <p className="App-intro">Sharing a few of our favourite movies</p>
 

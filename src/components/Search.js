@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import '../App.css'
 
-
-
 const Search = (props) => {
     const [searchValue, setSearchValue] = useState("");
 
@@ -27,7 +25,9 @@ const Search = (props) => {
                 onChange={handleSearchInputChanges}
                 type="text"
             />
-            <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+            <button className="search-btn">
+                <img className="search-img" src={require('../assets/search-icon.png')} alt="Search" onClick={callSearchFunction} />
+            </button>
         </form>
     );
 }

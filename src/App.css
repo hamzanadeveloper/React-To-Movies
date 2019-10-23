@@ -20,10 +20,27 @@
   color: white;
   padding: 20px;
 }
+.search-box{
+  margin-left: 30px;
+}
 
 .spinner {
   height: 80px;
   margin: auto;
+}
+
+.search-btn{
+  cursor: pointer;
+  background-color: #282c34;
+  border: 1px solid #282c34;
+  outline:none;
+  margin-bottom: -1px;
+}
+
+.search-img{
+  width:16px;
+  background-color: #282c34;
+  border: 1px solid #282c34;
 }
 
 .App-intro {
@@ -72,31 +89,30 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 50px;
   justify-content: center;
-  margin-top: 10px;
 }
 
 
 input[type="submit"] {
   padding: 5px;
-  background-color: transparent;
-  color: black;
+  background-color: #282c34;
+  color: #d0d0d0;
   border: 1px solid black;
   width: 80px;
   margin-left: 5px;
   cursor: pointer;
 }
 
-
-input[type="submit"]:hover {
-  background-color: #282c34;
-  color: antiquewhite;
-}
-
-
 .search > input[type="text"]{
   width: 40%;
-  min-width: 170px;
+  min-width: 300px;
+  background-color: inherit;
+  border: none;
+  color: #d0d0d0;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {
