@@ -76,9 +76,10 @@ const App = () => {
                         <div className="tab-title"><a className="a-tag" href="https://hamzaarshad.com">HOME</a></div>
                     </div>
                 </header>
-                <header className="App-header"><Search search={search} /></header>
-
-                <p className="App-intro">Sharing a few of our favourite movies</p>
+                <header className="sub-header">
+                    <Search search={search} />
+                    <p className="App-intro">Powered by OMDB.</p>
+                </header>
 
                 <div className="movies">{retrievedMovies}</div>
             </div>
