@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat&display=swap');
 
 .App {
   text-align: center;
@@ -15,7 +15,7 @@
   height: 70px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
@@ -29,12 +29,27 @@
   margin: auto;
 }
 
+.a-tag{
+    color: #fff;
+    text-decoration: none;
+}
+
 .search-btn{
   cursor: pointer;
   background-color: #282c34;
   border: 1px solid #282c34;
   outline:none;
   margin-bottom: -1px;
+}
+.tab-title{
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 40px;
 }
 
 .search-img{

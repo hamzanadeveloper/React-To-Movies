@@ -28,6 +28,7 @@ const Search = (props) => {
             <button className="search-btn">
                 <img className="search-img" src={require('../assets/search-icon.png')} alt="Search" onClick={callSearchFunction} />
             </button>
+
         </form>
     );
 }
