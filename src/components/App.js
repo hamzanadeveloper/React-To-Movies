@@ -7,8 +7,6 @@ import Search from "./Search";
 import { initialState, reducer } from "../store/reducer";
 import axios from "axios";
 import '../App.css'
-import { browserHistory } from "@version/react-router-v3";
-
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=7b6d1c01";
 

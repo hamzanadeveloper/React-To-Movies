@@ -11,7 +11,7 @@ const Movie = ({ movie }) => {
         movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
     return (
         <div className="movie">
-            <h2>{movie.Title}</h2>
+            <h2 style={{color: '#d0d0d0'}}>{movie.Title}</h2>
             <div>
                 <img
                     width="200"
@@ -19,7 +19,7 @@ const Movie = ({ movie }) => {
                     src={poster}
                 />
             </div>
-            <p>({movie.Year})</p>
+            <p style={{color: '#d0d0d0'}}>({movie.Year})</p>
         </div>
     );
 };
