@@ -1,6 +1,7 @@
 import React, { useReducer, useEffect } from "react";
 
 import Movie from "./Movie";
+import Header from "./Header";
 import spinner from "../assets/ajax-loader.gif";
 import Search from "./Search";
 import { initialState, reducer } from "../store/reducer";
@@ -66,19 +67,10 @@ const App = () => {
     return (
         <div className="App">
             <div className="m-container">
-                <header className="App-header">
-                    <div className="header-title">REACT-MOVIES</div>
-                    <div style={{float:'right'}}>
-                        <div className="tab-title"><a href="mailto:hamza.n.arshadwork@gmail.com" className="a-tag">CONTACT</a></div>
-                        <div className="tab-title"><a className="a-tag" href="https://hamzaarshad.com/app/views/resume.html">RESUME</a></div>
-                        <div className="tab-title"><a className="a-tag" href="https://hamzaarshad.com/app/views/portfolio.html">PORTFOLIO</a></div>
-                        <div className="tab-title"><a className="a-tag" href="https://hamzaarshad.com/app/views/profile.html">ABOUT</a></div>
-                        <div className="tab-title"><a className="a-tag" href="https://hamzaarshad.com">HOME</a></div>
-                    </div>
-                </header>
+                <Header/>
                 <header className="sub-header">
                     <Search search={search} />
-                    <p className="App-intro">Powered by OMDB.</p>
+                    <p className="App-intro">Powered by OMDB</p>
                 </header>
 
                 <div className="movies">{retrievedMovies}</div>
