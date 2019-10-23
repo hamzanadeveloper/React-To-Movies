@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
 .App {
   text-align: center;
 }
+.header-title{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 36px;
+  cursor: pointer;
+  color: #E50914;
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #141414;
   height: 70px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
-  cursor: pointer;
 }
 
 .spinner {
