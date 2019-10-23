@@ -20,7 +20,10 @@ const Movie = ({ movie }) => {
                 alt={`The movie titled: ${movie.Title}`}
                 src={poster}
             />
-            <div style={{position: 'relative', width:'inherit', zIndex: 3, display: 'inline-block'}}>OVERLAY</div>
+            <div className="overlay">
+                <div className="overlay-title">{movie.Title}</div>
+                <div className="overlay-year">({movie.Year})</div>
+            </div>
         </div>
     );
 };

@@ -133,6 +133,29 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.overlay{
+  position: relative;
+  width: inherit;
+  z-index: 3;
+  display: inline-block;
+  height: 70px;
+  background-color: #111;
+  opacity: 0.9;
+}
+.overlay-title{
+  color: #d0d0d0;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding: 5px;
+}
+.overlay-year{
+  color: #d0d0d0;
+  font-family: Montserrat, sans-serif;
+  margin-top: -10px;
+  font-size: 12px;
+  padding: 5px;
+}
+
 .search > input[type="text"]{
   width: 40%;
   min-width: 300px;
