@@ -20,7 +20,7 @@ const Movie = ({ movie }) => {
                 alt={`The movie titled: ${movie.Title}`}
                 src={poster}
             />
-            <div style={{position: 'relative', left: '50%', zIndex: 3, display: 'inline-block'}}>OVERLAY</div>
+            <div style={{position: 'relative', width:'inherit', zIndex: 3, display: 'inline-block'}}>OVERLAY</div>
         </div>
     );
 };
