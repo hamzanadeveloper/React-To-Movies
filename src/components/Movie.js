@@ -11,15 +11,16 @@ const Movie = ({ movie }) => {
         movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
     return (
         <div className="movie">
-            <h2 style={{color: '#d0d0d0'}}>{movie.Title}</h2>
-            <div>
-                <img
-                    width="200"
-                    alt={`The movie titled: ${movie.Title}`}
-                    src={poster}
-                />
-            </div>
-            <p style={{color: '#d0d0d0'}}>({movie.Year})</p>
+            <img
+                style={{
+                    zIndex:2,
+                    position: 'absolute',
+                }}
+                width="200"
+                alt={`The movie titled: ${movie.Title}`}
+                src={poster}
+            />
+            <div style={{position: 'relative', left: '50%', zIndex: 3, display: 'inline-block'}}>OVERLAY</div>
         </div>
     );
 };
