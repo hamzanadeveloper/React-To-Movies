@@ -85,6 +85,7 @@ body{
 .movies {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
   flex-direction: row;
 }
 
@@ -139,6 +140,7 @@ input[type="submit"] {
   z-index: 3;
   display: inline-block;
   height: 70px;
+  left: 50%;
   background-color: #111;
   opacity: 0.9;
 }

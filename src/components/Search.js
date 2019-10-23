@@ -24,6 +24,11 @@ const Search = (props) => {
                 value={searchValue}
                 onChange={handleSearchInputChanges}
                 type="text"
+                onKeyDown={(ev) => {
+                    if (ev.key === 'Enter') {
+                        callSearchFunction(ev)
+                    }
+                }}
             />
             <button className="search-btn">
                 <img className="search-img" src={require('../assets/search-icon.png')} alt="Search" onClick={callSearchFunction} />
