@@ -3,5 +3,4 @@ Want to search for your favorite movies? React To Movies is a web application th
 
 - React & Redux
 - React Hooks (UseState, UseEffect, UseReducer)
-- JSX
 - OMDB API
